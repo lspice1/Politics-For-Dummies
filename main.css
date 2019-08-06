@@ -1,50 +1,27 @@
-body {
-  background: #333;
-  color: #fff;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
 }
 
-.navbar {
-  border-bottom: #008ed6 3px solid;
-  opacity: 0.8;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-#home-section {
-  background: url(../img/home.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 700px;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-#home-section .dark-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 700px;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-#home-section .home-inner {
-  padding-top: 150px;
-}
-
-#home-section .card-form {
-  opacity: 0.8;
-}
-
-#home-section .fas,
-#create-section .fas {
-  color: #008ed6;
-  background: #fff;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-#explore-section .fas,
-#share-section .fas {
-  background: #333;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
 }
