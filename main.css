@@ -107,6 +107,8 @@ img {
   padding-top: 95px;
   padding-right: 40px;
   padding-bottom: 40px;
+  width:500px;
+  height:500px;
 
 }
 
@@ -179,3 +181,6 @@ h4 {
 h2,h3 {
   font-size: 2em;
 }
+
+
+<span class="w3-hide-small">
