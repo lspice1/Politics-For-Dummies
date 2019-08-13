@@ -85,3 +85,43 @@ nav:after {
   top: 100%;
   right: 0;
 }
+
+body {
+font-family: Helvetica;
+margin:0px;
+}
+header  {
+min-height: 100vh;
+width:100vw;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3.5em;
+  color: tomato;
+}
+img {
+  float: right;
+  padding-top: 95px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+
+}
+
+section {
+
+  min-height: 100vh;
+  width: 100vw;
+  display: block;
+  padding-top: 50px;
+}
+
+p {
+  font-size: 2.5em;
+  width: 40%;
+  margin: 10vh 10vw;
+  padding-bottom: 100px;
+  padding-right: 30px;
+  line-height:1.5em;
+}
