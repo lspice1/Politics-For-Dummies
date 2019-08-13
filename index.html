@@ -7,30 +7,59 @@
   <div class="topnav">
     <link rel="stylesheet" href="main.css">
     <div class="custom-padding">
-    <nav>
-      <div class="logo">Puzzle</div>
-      <ul class="menu-area">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</head>
-<header>
+      <nav>
+        <div class="logo">Puzzle</div>
+        <ul class="menu-area">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </head>
+  <header>
 
-  <h1> Learn Politics
-    <br> Through
-    <br> Memes </h1>
+    <h1> Learn Politics
+      <br> Through
+      <br> Memes </h1>
 
-    <section>
-      <img src="HomePic.png" alt="A meme with Eistein" width="500px">
-      <p> While politics sounds dull, memes are not! Educational and entertaining, political memes
-        are about the most fun anyone could ever have studying politics. Explore them with us! </p>
-      </section>
-    </header>
+      <section>
+        <img src="HomePic.png" alt="A meme with Eistein" width="500px">
+        <p> While politics sounds dull, memes are not! Educational and entertaining, political memes
+          are about the most fun anyone could ever have studying politics. Explore them with (link about) us! </p>
+        </section>
+        <hr>
+      </header>
+      <div class="slider-1">
+        <div class="container">
+          <div class="row">
+            <img class="mySlides" src="Korea.png" width="500px">
+            <img class="mySlides" src="Trump.jpg" width="500px">
+            <img class="mySlides" src="US.png" width="500px">
+
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length} ;
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+            }
+
+            </script>
 
 
-
-
-    </html>
+            </html>
